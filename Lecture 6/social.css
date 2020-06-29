@@ -1,0 +1,47 @@
+
+#outer{
+	position:fixed;
+	left:5px;
+	top:10vh;
+	width:50px;
+	height:250px;
+	opacity:0.7;
+}
+
+#outer div{
+	width:50px;
+	height:50px;
+	position:sticky;
+	top:5px;
+}
+
+#Google{
+
+	background-color:#f8f8f8;
+	background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png');
+	background-size: 40px 40px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+#fb{
+	background-color:red;
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28square%29.png/480px-Facebook_logo_%28square%29.png");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#twitter{
+	background-color:blue;
+	background-image: url('https://store-images.s-microsoft.com/image/apps.50484.9007199266244427.4d45042b-d7a5-4a83-be66-97779553b24d.2c71c1ea-c28f-4dd1-b72d-c43cdd3476f4');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+#reddit{
+	background-color:black;
+	background-image: url('https://pbs.twimg.com/profile_images/1267872080797696002/5hv6hTuL_400x400.jpg');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<head>
+	<title> Form </title>
+
+	<link rel="icon" href="https://ninjasfiles.s3.amazonaws.com/0000000000001394.png" >
+
+</head>
+
+<body>
+	<nav>
+		
+	</nav>
+	<header>
+		<p>
+			<a href="../Lecture 2/Lecture2.html">Home</a>
+		</p>
+		
+	</header>
+	<main>
+		<form>
+			<div>
+				<!-- Username -->
+				<label for="username">Username</label>
+				<br>
+				<input type="text" id="username"required>
+			</div>
+			<br>
+			<div>
+				<!-- Username -->
+				<label for="email">Email</label>
+				<br>
+				<input type="email" id="email"required placeholder="abc@def.com">
+			</div>
+			<br>
+			<div>
+				<!-- Username -->
+				<label for="date">Date</label>
+				<br>
+				<input type="date" id="date"required>
+			</div>
+			<br>
+			<div>
+				<!-- Username -->
+				<label for="time">Time</label>
+				<br>
+				<input type="time" id="time"required>
+			</div>
+			<br>
+			<div>
+				<!-- Username -->
+				<label for="range">Range</label>
+				<br>
+				<input type="range" id="range"required min="10" max="100" step="10">
+			</div>
+			<br>
+			<div>
+				<!-- Username -->
+				<label for="uid">UID</label>
+				<br>
+				<input type="number" id="uid"required min="10" max="100" >
+			</div>
+			<br>
+			<div>
+				<!-- Username -->
+				<label for="Country">Country</label>
+				<br>
+				<input type="Country" id="Country"required name="Country" value = "India" disabled>
+			</div>
+			<br>
+			<div>
+				<!-- Password -->
+				<label for="password">Password</label>
+				<br>
+				<input type="password" id="password"required>
+			</div>
+			<br>
+			<label for = "gender"> Gender </label>
+			<div id = "gender">
+				<!-- Password -->
+				
+				<input type="radio" id="male" name = "gender" value="male">
+				<label for="male">Male</label>
+				<br>
+				<input type="radio" id="female" name="gender" value="female">
+				<label for="female">Female</label>
+				<br>
+				<input type="radio" id="other" name="gender" value="other">
+				<label for="other">Other</label>
+				
+			</div>
+			<br>
+			<label for = "Courses Done">Courses Done</label>
+			<div id = "Courses Done">
+				<input type="checkbox" name="courses" value = "C++"> C++ <br>
+				<input type="checkbox" name="courses" value = "Java"> Java <br>
+				<input type="checkbox" name="courses" value="Web Development"> Web Development <br>
+
+			</div>
+			<br>
+			
+			<div>
+				
+				<label for = "CourseCommencement"> Commencement</label>
+				<br>
+				<select name="Course Commencement" id = "CourseCommencement">
+					<option>
+						Jan
+					</option>
+					<option>
+						Feb
+					</option>
+					<option>
+						Mar
+					</option>
+					
+				</select>
+			</div>
+			<br>
+			<div>
+				<p> Share your experiences </p>
+				<textarea rows="10" cols="40">
+					
+				</textarea>
+			</div>
+			<br>
+			<div>
+				<button type="submit"> Submit </button>
+			</div>
+		</form>
+	</main>
+</body>
