@@ -1,0 +1,39 @@
+#container{
+	height:400px;
+	width:800px;
+	display: flex;
+	flex-direction: row;
+	background-color: grey;
+	/*flex-wrap: wrap-reverse;*/
+}
+
+#container div{
+	/*display: inline-block;*/
+	height: 200px;
+	width: 200px;
+	flex-grow: 1;
+}
+
+#Div1{
+	background-color: blue;
+	/*order: 1;*/
+	flex-shrink: 4;
+}
+#Div2{
+	background-color: cyan;
+	flex-shrink: 1;
+}
+#Div3{
+	background-color: red;
+	/*order:-5;*/
+	flex-shrink: 1;
+}
+#Div4{
+	background-color: green;
+	/*order:5;*/
+	flex-shrink: 1;
+}
+#Div5{
+	background-color: orange;
+	flex-shrink: 1;
+}

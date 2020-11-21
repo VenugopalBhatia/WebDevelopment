@@ -1,0 +1,20 @@
+
+
+#Lightbox{
+	position:fixed;
+	top:0%;
+	left:0;
+	overflow: hidden;
+	height:0px;
+	width:0px;
+	transition: all 2s ease-in-out ;
+}
+
+#Lightbox:target{
+	left:50%;
+	top:50%;
+	height:100px;
+	width:100px;
+	background-color: lightgrey;
+
+}
