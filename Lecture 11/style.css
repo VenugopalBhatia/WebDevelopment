@@ -1,0 +1,240 @@
+
+@keyframes ChangeShape{
+	0%{
+		border-radius: 0%;
+	}
+
+	25%{
+		border-radius: 25%;
+	}
+
+	50%{
+		border-radius: 30%;
+	}
+
+	100%{
+		border-radius: 100%;
+	}
+}
+
+@keyframes bounce{
+	0%{
+		transform:translateY(35px);
+	}
+
+	25%{
+		transform:translateY(-35px);
+
+	}
+
+	50%{
+		transform:translateY(15px);
+	}
+
+	100%{
+		transform: translateY(-15px);
+	}
+}
+
+
+@keyframes rotate{
+
+	0%{
+		transform: rotate(360deg);
+	}
+
+	50%{
+		transform: rotate(-360deg);
+	}
+}
+
+@keyframes rotate3d{
+	0%{
+		transform: rotateX(360deg) rotateY(360deg);
+	}
+}
+
+#boxes{
+	height:800px;
+	width: 100vw;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+#box {
+
+	height: 80px;
+	width: 80px;
+	background-color:aquamarine;
+	/*transform: rotate(120deg);*/
+	transform: translate(100px);
+	transform: scale(1.5);
+	position: relative;
+
+	/*left:10%;
+	top: 20%;*/
+	transition: 3s ease-in-out;
+
+
+}
+
+#box:hover{
+	height:400px;
+}
+
+#box1{
+	height: 80px;
+	width: 80px;
+	background-color:aquamarine;
+	/*transform: rotate(120deg);*/
+	/*transform: translate(100px);
+	transform: scale(1.5);*/
+	position: relative;
+
+	/*left:40%;
+	top: 20%;*/
+	transition: 3s ease-in-out;
+}
+
+#box2{
+	height: 80px;
+	width: 80px;
+	background-color:aquamarine;
+	/*transform: rotate(120deg);*/
+	/*transform: translate(100px);
+	transform: scale(1.5);*/
+	position: relative;
+	animation:ChangeShape 1s ease-in-out infinite alternate;
+	/*left:60%;
+	top: 40%;*/
+	
+}
+
+#box3{
+	height: 80px;
+	width: 80px;
+	background-color:aquamarine;
+	/*transform: rotate(120deg);*/
+	/*transform: translate(100px);
+	transform: scale(1.5);*/
+	position: relative;
+	/*animation:ChangeShape 1s ease-in-out infinite alternate;*/
+	/*animation-delay: 1s;*/
+	animation-timing-function: ease-in-out;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+	animation-name: bounce;
+	animation-direction: alternate; 	
+
+
+	/*left:80%;
+	top: 40%;*/
+}
+
+#box4{
+	height: 80px;
+	width: 80px;
+	background-color:aquamarine;
+	/*transform: rotate(120deg);*/
+	/*transform: translate(100px);
+	transform: scale(1.5);*/
+	position: relative;
+	/*animation:ChangeShape 1s ease-in-out infinite alternate;*/
+	/*animation-delay: 1s;*/
+	animation-timing-function: ease-in-out;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-name: rotate;
+	animation-direction: alternate; 	
+
+
+	/*left:85%;
+	top: 40%;*/
+}
+
+#box1:hover{
+	transform: translate(100px) rotate(360deg)  scale(0.5);
+	border-radius: 50px;
+}
+
+#cube{
+	height: 200px;
+	width: 200px;
+	position:relative;
+	transform-style: preserve-3d;
+	perspective: 6995px;
+	transform:rotateX(25deg) rotateY(25deg);
+	animation-timing-function: ease-in-out;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-name: rotate3d;
+	animation-direction: alternate;
+}
+
+
+.face{
+	height:100%;
+	width:100%;
+	top: 20%;
+	left: 20%;
+	position:absolute;
+	transition: all 1s;
+}
+
+.one{
+	background-color: skyblue;
+	
+	transform: rotateY(90deg) translateZ(100px) translateX(-100px);
+}
+
+.two{
+	background-color: darkgrey;
+}
+
+.three{
+	background-color: red;
+	transform: rotateX(90deg) translateZ(100px) translateY(100px);
+}
+
+.one:hover{
+	/*transform: translateX(200px) rotateY(45deg) translateZ(-50px) ;*/
+	/*transform:translateX(200px);*/
+}
+
+/*#box6{*/
+	/*height: 80px;
+	width: 80px;
+	background-color:orange;*/
+	/*transform: rotate(120deg);*/
+	/*transform: translate(100px);
+	transform: scale(1.5);*/
+	/*position: relative;*/
+	/*animation:ChangeShape 1s ease-in-out infinite alternate;*/
+	/*animation-delay: 1s;*/
+	/*animation-timing-function: ease-in-out;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+	animation-name: bounce;
+	animation-direction: alternate;*/ 
+	/*transform:rotateX(120deg);*/
+/*}*/
+
+
+/*#box5{*/
+	/*height: 80px;
+	width: 80px;
+	background-color:grey;*/
+	/*transform: rotate(120deg);*/
+	/*transform: translate(100px);
+	transform: scale(1.5);*/
+	/*position: relative;*/
+	/*animation:ChangeShape 1s ease-in-out infinite alternate;*/
+	/*animation-delay: 1s;*/
+	/*animation-timing-function: ease-in-out;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+	animation-name: bounce;
+	animation-direction: alternate;*/ 
+/*}*/
