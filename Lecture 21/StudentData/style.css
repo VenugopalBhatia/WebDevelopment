@@ -1,0 +1,27 @@
+#main{
+    width:100vw;
+    height:75vh;
+    display: inline-block;
+}
+#form,#list{
+    position: absolute;
+    
+    height:75vh;
+    width:50vw;
+}
+#form input,label{
+   margin: 10px;
+   
+}
+
+#list{
+    left:50vw;
+}
+
+#list p:nth-child(2n){
+    background-color: lightgray;
+}
+
+#form input{
+    display: block;
+}
